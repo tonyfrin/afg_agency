@@ -1,0 +1,472 @@
+/* Paletas de Colores */
+/*Pantome Blak           = #162431 */
+/* PANTONE COOL GRAY 6C  = #A9A8A0 */
+/* Complementario negro  = #000000 */
+/* Complementario blanco = #FFFFFF */
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?2g9ur9');
+    src:  url('../fonts/icomoon.eot?2g9ur9#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?2g9ur9') format('truetype'),
+      url('../fonts/icomoon.woff?2g9ur9') format('woff'),
+      url('../fonts/icomoon.svg?2g9ur9#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-menu:before {
+    content: "\e9bd";
+  }
+  
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 1.5;
+    letter-spacing: -.2px;
+    color: white;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 40px;
+}
+
+.hero {
+    height: 300px;
+    /*background-image: url(../Images/hero.jpg);*/
+    background-color: #162431;
+    /*background-size: 500px 300px;*/
+    /*background-position-x: right;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*background-repeat: no-repeat;*/
+}
+
+.image-hero {
+    object-fit: cover;
+}
+
+.processes {
+    background-color: #fafafa;
+    padding: 20px;
+}
+
+.section-all {
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.section-details {
+    width: 50%;
+}
+
+.section-imageContainer {
+    width: 50%;
+}
+
+.section-image {
+    max-width: 100%;
+}
+
+.section-title {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.section-course,
+.section-url 
+{
+    margin: 10px 0;
+}
+
+.section-description {
+    font-size: 20px;
+}
+
+.section-all strong {
+    font-family: "Fjalla One";
+}
+
+.header {
+    background-color: #162431;
+    color: white;
+    display: flex;
+    height: 55px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu { /* .menu hereda de .header */
+    height: inherit;
+}
+
+.header ol {
+    display: flex;
+    height: inherit;
+}
+
+.header ol li { /* .header ol li hereda de .header ol */
+    height: inherit;
+}
+
+.header a {
+    color: white;
+    text-decoration: none; 
+    height: inherit; 
+    display: flex;
+    align-items: center;
+    padding: 0 10px;  
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+figure {
+    margin: 0;
+  }
+
+.footer {
+    color: white;
+    background-color: #162431;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: x-small;
+    flex-wrap: wrap;
+}
+
+.project-list-title{
+    margin-left: 20px;
+}
+
+.project-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project {
+    margin: 1%;
+    width: 48%;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.project-image {
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-details {
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: #fafafa;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.project-url {
+    color: #056fff;
+    border: 1px solid;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contact {
+    background-color: #A9A8A0;
+    color: white;
+    height: 150px;
+    display: flex;
+}
+
+.form-email input {
+    border-color: gray;
+    border-style: solid;
+    border-radius: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 5px 20px 5px 25px;
+    background-image: url('../Images/envelope.svg');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+.form-email button {
+    display: block;
+    margin-top: 10px;
+    background: transparent;
+    color: white;
+    padding: 10px 0px;
+    border-radius: 5px;
+    border-color: white;
+    border-style: solid;
+    width: 100px;
+    margin: 10px;
+}
+
+.form-email h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    flex: 1;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+
+.container-contac {
+    max-width: 1000px;
+    flex: 1;
+    margin: 0 0;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+
+.burger-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    z-index: 4;
+    left: 5px;
+    top: 5px;
+    color: white;
+}
+
+@media screen and (max-width: 1024px) {
+    .container, .container-contac {
+        padding: 0 1em;
+    }
+    .hero {
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding: 2em;
+    }
+    .image-hero {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    h1{
+        font-size: 2em;
+        z-index: 2;
+    }
+   
+}
+
+
+@media screen and (max-width: 767px) {
+    .burger-button {
+        display: block;
+    }
+    .header {
+        display: block;
+        height: auto;
+    }
+    .header ol {
+        display: block;
+    }
+    .header ol li {
+        height: 40px;
+    }
+    .header a {
+        justify-content: center;
+        height: 40px;
+        font-size: 2em;
+        text-decoration: underline;
+        margin-bottom: .5em;
+    }
+    .header .logo {
+        text-align: center;
+    }
+    .menu {
+        position: fixed;
+        background: rgba(169, 168, 160, .9);
+        z-index: 3;
+        top: 0;
+        left: -100vw;
+        width: 100vw;
+        bottom: 0;
+        transition: .3s;
+    }
+    .menu.is-active {
+        left: 0;
+    }
+    
+    .section-all {
+        display: block;
+    
+    }
+    .section-imageContainer {
+        width: auto;
+        text-align: center;
+       
+    }
+    .section-image{
+        width: auto;
+    }
+    .section-details {
+        width: auto;
+        font-size: 16px;
+    }
+    .section-details, .section-course, .section-url {
+        margin: .3em;
+        margin-bottom: .3em;
+    }
+
+    .section-title {
+        font-size: 1.5em;
+    }
+    .section-course {
+        font-size: .8em;
+    }
+    .section-description {
+        font-size: 1em;  
+    }
+    .section-url {
+        font-size: .8em; 
+    }
+    .project {
+        width: auto;
+    }
+    .project-details {
+        margin: -2em .5em .5em;
+        padding: 1em;
+    }
+
+    .contact {
+        height: auto;
+        padding: 1em o;
+        text-align: center;
+        display: block;
+        border: 1px solid transparent;
+    }
+    .form-email button {
+        margin: 2em auto;
+    }
+    .footer {
+        display: block;
+        text-align: center;
+        border: 1px solid transparent;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    h1{
+        font-size: 1.5em;
+    }
+    .section-details {
+        width: auto;
+        font-size: 12px;
+    }
+    .section-title {
+        font-size: 1.5em;
+    }
+    .section-course {
+        font-size: .8em;
+    }
+    .section-description {
+        font-size: 1em;  
+    }
+    .section-url {
+        font-size: .8em; 
+    }
+  
+}
+
+@media screen and (max-width: 320px) {
+    h1{
+        font-size: 1em;
+    }
+    .section-details {
+        width: auto;
+        font-size: 10px;
+    }
+    .section-title {
+        font-size: 1.5em;
+    }
+    .section-course {
+        font-size: .8em;
+    }
+    .section-description {
+        font-size: 1em;  
+    }
+    .section-url {
+        font-size: .8em; 
+    }
+}
